@@ -27,7 +27,7 @@ export class RegisterComponent {
     this.userService.register({ email: this.email, password: this.password }).subscribe({
       next: () => {
         this.message = 'Registro exitoso. Ahora puedes iniciar sesión.';
-        setTimeout(() => this.router.navigate(['/login']), 1500);
+        setTimeout(() => this.router.navigate(['/login']), 3000);
       },
       error: (err) => (this.message = err.message)
     });
