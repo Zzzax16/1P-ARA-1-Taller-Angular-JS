@@ -1,0 +1,150 @@
+/* =======================
+   ESTILOS GLOBALES
+   ======================= */
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background-color: #212121;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+  text-align: center;
+}
+
+/* =======================
+   NAVBAR
+   ======================= */
+.navbar {
+  background-color: #15154D;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar button {
+  background-color: #1565c0;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #0d47a1;
+}
+
+/* =======================
+   CONTENEDORES GENERALES
+   ======================= */
+.container {
+  max-width: 420px;
+  margin: 50px auto;
+  background: linear-gradient(135deg, #121212 50%, #1a0552 50%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* =======================
+   FORMULARIOS
+   ======================= */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #1976d2;
+}
+
+button {
+  background-color: #0a4a8a; 
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #125ca1;
+}
+
+/* =======================
+   MENSAJES DE ERROR
+   ======================= */
+.error {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+  font-style: bold;
+}
+
+/* =======================
+   HOME PAGE
+   ======================= */
+img {
+  display: block;
+  margin: 15px auto;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* =======================
+   RESPONSIVE
+   ======================= */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+}

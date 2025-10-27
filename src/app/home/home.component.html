@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Home</h2>
+  <div *ngIf="user; else notLogged">
+    <p>Bienvenido: {{ user.first_name }} {{ user.last_name }}</p>
+    <img src="/assets/img/logo.png" alt="" width="100px">
+    <p>Email: {{ user.email }}</p>
+  </div>
+  <ng-template #notLogged>
+    <p>No estás logueado. <a routerLink="/login">Iniciar sesión</a></p>
+  </ng-template>
+</div>  

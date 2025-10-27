@@ -1,0 +1,8 @@
+<nav class="navbar">
+  <a routerLink="/">Home</a>
+  <a routerLink="/login" *ngIf="!userService.isLogged()">Login</a>
+  <a routerLink="/register" *ngIf="!userService.isLogged()">Register</a>
+  <span *ngIf="userService.isLogged()">
+    <button (click)="logout()">Logout</button>
+  </span>
+</nav>
